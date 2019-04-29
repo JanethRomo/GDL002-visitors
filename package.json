@@ -1,0 +1,23 @@
+{
+  "name": "gdl002-visitors",
+  "version": "1.0.0",
+  "description": "## Preámbulo",
+  "main": "administrador.js",
+  "dependencies": {
+    "jest": "^24.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanethRomo/GDL002-visitors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanethRomo/GDL002-visitors/issues"
+  },
+  "homepage": "https://github.com/JanethRomo/GDL002-visitors#readme"
+}

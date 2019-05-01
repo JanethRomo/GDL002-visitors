@@ -11,20 +11,24 @@ firebase.initializeApp({
     const name = document.getElementById("name").value;
     const lastName = document.getElementById("last_name").value;
     const host = document.getElementById("host_name").value;
+    const picture = document.getElementById("hiddenPicture").value;
     db.collection("users").add({
         first: name,
         last: lastName,
-        hosttest: host
+        hosttest: host,
+        picture: picture 
     })
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
         document.getElementById("name").value = '';
         document.getElementById("last_name").value = '';
         document.getElementById("host_name").value = '';
+        document.getElementById("hiddenPicture").value = '';
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
     });
+
   }
 
 //Lee datos del visitante
@@ -36,12 +40,11 @@ db.collection("users").onSnapshot((querySnapshot) => {//se reemplazo .get() por 
         console.log(doc.data())
         table.innerHTML +=`
                       <tr>
-                      <th scope row="row"></th>
                         <td>${doc.data().first}</td>
                         <td>${doc.data().last}</td>
                         <td>${doc.data().hosttest}</td>
+                        <td>${doc.data().picture}</td>
                         <td><button onclick = "deleteData('${doc.id}')">Eliminar</button></td>
-                        <td><button onclick = "edit() ">Editar</button></td>
                       </tr>
         `
     });

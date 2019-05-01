@@ -64,7 +64,13 @@
                 <div class="row">
                     <div class="col s8">
                         <span for="">Please, take a picture</span>
-                        <a class="waves-effect waves-light btn-small"><i class="material-icons">add_a_photo</i></a>                    </div>
+                        <div id="camera">
+                            <video id="player" autoplay></video>
+                            <canvas id = "snapshot"></canvas>
+                            <a id="capture" class="waves-effect waves-light btn-small"><i  class="material-icons">add_a_photo</i></a>
+                        </div>
+                        <input id = "hiddenPicture">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s8">

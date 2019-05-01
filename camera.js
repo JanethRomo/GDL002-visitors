@@ -1,20 +1,3 @@
-//Initialize Cloud Firestore through Firebase
-const db = firebase.firestore(); //Iniciacion de Firestore (db)
-//agregar documentos
-function saveDataUser(){
-  const name = document.getElementById("name").value;
-  const lastName = document.getElementById("last_name").value;
-  const host = document.getElementById("host_name").value;
-  const picture = document.getElementById("hiddenPicture").value;
-  db.collection("users").add({
-      first: name,
-      last: lastName,
-      hosttest: host,
-      picture: picture 
-      
-
-  })
-
 document.getElementById("hiddenPicture").style.display= "none";
 
 var player = document.getElementById('player');

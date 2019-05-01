@@ -29,37 +29,36 @@
             <h1 class="center-align">Registro de visitantes</h1>
               <div class="row center-align">
                   <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s6">
-   <h4>Ingreso de usuarios</h4>
-   <div class="row">
-    <div class="input-field col s12">
-<input id ="email2" type="email" class="validate" placeholder="Ingresa tu correo">
-             </div>
-           </div>
-       </div>
-       <div class="row">
-      <div class="input-field col s12">
-<input id="password2" type="password" class="validate" placeholder="Ingresa contraseña">
-             </div>
-           </div>
-       </div>
-       <div class="login-buttons center-align">
-          <input onclick="getInToAdministration()" type="button" class="btn purple" value="Registrar" onclick="window.functions.navigateTo('/administrador')" />
-    </div>
-<div id="container">
-    <!-- <div class="container">
-        <table class="col s3">
-            <thead>
-              <tr>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Anfitrión</th>
-                  <th>Hora de Salida</th>
-              </tr>
-            </thead>
-    
-            <tbody id='table'>
+                        <div class="row">
+                                <div class="input-field col s6">
+             <h4>Ingreso de usuarios</h4>
+             <div class="row">
+              <div class="input-field col s12">
+          <input id ="email2" type="email" class="validate" placeholder="Ingresa tu correo">
+                       </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                <div class="input-field col s12">
+          <input id="password2" type="password" class="validate" placeholder="Ingresa contraseña">
+                       </div>
+                     </div>
+                 </div>
+                 <div class="login-buttons center-align">
+                    <input onclick="getInToAdministration()" type="button" class="btn purple" value="Registrar" onclick="window.functions.navigateTo('/administrador')" />
+              </div>
+          <div id="container">
+              <!-- <div class="container">
+                  <table class="col s3">
+                      <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Anfitrión</th>
+                            <th>Hora de Salida</th>
+                        </tr>
+                      </thead>
+                      <tbody id='table'>
             </tbody>
           </table> -->
 
@@ -84,146 +83,3 @@
  <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
- <meta charset="utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>Welcome to Firebase Hosting</title>
- <Compiled and minified CSS -->
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <link rel="stylesheet" href="style.css" /> -->
- <!--Import Google Icon Font-->
- <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
- <header>
-   <nav class=" light-blue darken-4" role="navigation">
-     <div class="nav-wrapper clearfix">
-       <a href="#!" class="brand-logo"><img class="logo" src=""/></a>
-       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-         <i class="material-icons">menu</i></a>
-       <ul class="right hide-on-med-and-down"> -->
-         <!-- <li><a href="administrador.html">Administradora</a></li>
-       </ul>
-     </div>
-   </nav>
-   <ul class="sidenav" id="mobile-demo">
-     <li><a href="administrador.html">Administradora</a></li>
-   </ul> -->
-<!--  </header>
- <main>
-   <h1 class="center-align">NOMBRE</h1>
-     <div class="row center-align">
-         <form class="col s12">
-           <div class="row">
-             <div class="input-field col s6">
-               <input id="email" type="email" placeholder="Ingresa tu email">
-               <label for="email">Email</label> -->
-            <!--  </div>
-             <div class="row">
-                    <div class="input-field col s6">
-                      <input id="password" type="password" placeholder="Contraseña"> -->
-                      <!-- <label for="password">Contraseña</label> -->
-                    <!-- </div>
-                    <div class="login-buttons center-align">
-                    <button onclick="getInTo()">Enviar</button>
-                    </div>
-                  </div>
-           </div>
-       </div>
-     </form>
-   </div> -->
-
- <!-- Compiled and minified JavaScript -->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-</article>
-</main>
-<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
- <script src="administrador.js"></script>
-</body>
-</html>
- -->
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Administrador</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="main.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDX2ee9UXZiy3LtvxI7-iAWxuCDK6PR1bE",
-        authDomain: "registro-de-visitantes-ae509.firebaseapp.com",
-        databaseURL: "https://registro-de-visitantes-ae509.firebaseio.com",
-        projectId: "registro-de-visitantes-ae509",
-        storageBucket: "registro-de-visitantes-ae509.appspot.com",
-        messagingSenderId: "31101697566"
-      };
-      firebase.initializeApp(config);
-    </script>
-</head>
-<body>
-<h4>Ingreso de usuarios</h4>
-<input id ="email2" type="email" placeholder="Ingresa tu correo">
-<input id="password2" type="password" placeholder="Ingresa contraseña">
-<button onclick="getInTo()">Acceder</button>
-
-<div id="container">
-
-</div>
-
-<script src="administrador.js"></script>
-</body>
-</html> -->

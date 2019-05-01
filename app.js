@@ -32,11 +32,11 @@ const table = document.getElementById('table');// Se guarda todo lo que esta den
 db.collection("users").onSnapshot((querySnapshot) => {//se reemplazo .get() por onSnapshot()
   table.innerHTML = ''; //Limpia los datos de la tabla
     querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data()}`);
+        console.log(`${doc} => ${doc.data()}`);
         console.log(doc.data())
         table.innerHTML +=`
                       <tr>
-                      <th scope row="row">${doc.id}></th>
+                      <th scope row="row"></th>
                         <td>${doc.data().first}</td>
                         <td>${doc.data().last}</td>
                         <td>${doc.data().hosttest}</td>

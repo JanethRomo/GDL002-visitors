@@ -14,7 +14,7 @@ function saveDataUser(){
       
 
   })
-  
+
 document.getElementById("hiddenPicture").style.display= "none";
 
 var player = document.getElementById('player');
